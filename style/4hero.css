@@ -1,0 +1,88 @@
+/* ===== Sessão da 4 cores ===== */
+.galeria-section {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.galeria-item {
+  position: relative;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  font-family: "Glacial Indifference", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: transform 0.6s ease, z-index 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover com destaque */
+.galeria-item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Imagens */
+.cor1 { background-image: url("/img/nick_amarelo.jpg"); }
+.cor2 { background-image: url("/img/nick_branco_foco.jpg"); }
+.cor3 { background-image: url("/img/nick_cell.jpg"); }
+.cor4 { background-image: url("/img/nick_foco.JPG"); }
+
+/* ===== Degradês coloridos (de baixo pra cima) ===== */
+.cor1 .overlay {
+  background: linear-gradient(to top, #FFF9F2 0%, rgba(255, 249, 242, 0) 70%);
+}
+
+.cor2 .overlay {
+  background: linear-gradient(to top, #FAEAB1 0%, rgba(250, 234, 177, 0) 70%);
+}
+
+.cor3 .overlay {
+  background: linear-gradient(to top, #69ABC3 0%, rgba(105, 171, 195, 0) 70%);
+}
+
+.cor4 .overlay {
+  background: linear-gradient(to top, #493222 0%, rgba(73, 50, 34, 0) 70%);
+}
+
+/* Overlay base */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  opacity: 0.7;
+}
+
+.galeria-item:hover .overlay {
+  opacity: 0.9;
+}
+
+/* ===== Texto ===== */
+.galeria-item h3 {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.galeria-item:hover h3 {
+  transform: translateY(-5px);
+  opacity: 0.95;
+}
+

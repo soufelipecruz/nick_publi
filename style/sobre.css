@@ -1,0 +1,96 @@
+/* ====== SECTION SOBRE ====== */
+.sobre-section {
+  width: 100%;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Container */
+.sobre-section .container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+/* Divide em 2 metades */
+.imagem-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== LADO ESQUERDO ===== */
+.sobre-cor-solida {
+  flex: 1;
+  background-color: #FAEAB1;
+  color: #493222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* deixa espaço pra logo embaixo */
+  align-items: flex-start;
+  padding: 4rem 4rem 2rem 7rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Texto */
+.texto-sobre {
+  max-width: 550px;
+}
+
+.sobre-cor-solida h2 {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #493222;
+  text-align: start;
+}
+
+.sobre-cor-solida p {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* ===== LOGO ===== */
+.sobre-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+.sobre-logo img {
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.sobre-logo img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ===== LADO DIREITO — IMAGEM ===== */
+.sobre-imagem {
+  flex: 1;
+  width: 50%;
+  overflow: hidden;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 5s ease;
+}
+
+.sobre-imagem img:hover {
+  transform: scale(1.05);
+}
+    

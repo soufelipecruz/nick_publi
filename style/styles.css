@@ -1,0 +1,217 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== BANNER ===== */
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background: url('/img/nick_branco11.jpg') no-repeat center 30% / cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* Overlay com degradê ajustado */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(105, 171, 195, 0.9) 25%, rgba(250, 234, 177, 0.4) 70%, rgba(255, 249, 242, 0) 95%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 8rem;
+  color: #FFF9F2;
+}
+
+.banner-content {
+  max-width: 650px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ===== Título com logo ===== */
+.banner-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-content h1 {
+  font-size: clamp(4rem, 5vw, 5.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #FAEAB1;
+}
+
+.banner-logo {
+  width: clamp(70px, 10vw, 100px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===== Texto ===== */
+.banner-content p {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #FFF9F2;
+  line-height: 1.6;
+}
+
+/* ===== Botão ===== */
+.banner-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 4.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  background: #493222;
+  color: #FFF9F2;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 12px rgba(105, 171, 195, 0.4);
+}
+
+.banner-btn:hover {
+  background: linear-gradient(135deg, #FAEAB1, #FFF9F2);
+  box-shadow: 0 8px 20px rgba(105, 171, 195, 0.6);
+  transform: translateY(-3px);
+  color: #493222;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1024px) {
+  .banner-overlay {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    background-position: center top;
+  }
+
+  .banner-overlay {
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(73, 50, 34, 0.9) 30%, rgba(105, 171, 195, 0.5) 80%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-title {
+    justify-content: center;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner-logo {
+    width: 80px;
+  }
+
+  .banner-btn {
+    margin: 1.5rem auto 0;
+    width: 16rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .banner-btn {
+    width: 14rem;
+    font-size: 1.1rem;
+    align-self: center;
+  }
+}
+
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 0;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+/* ===== DEPOIMENTOS ===== */
+.depoimentos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.depoimento-card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.depoimento-card blockquote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+}
+
+/* ===== ANIMAÇÕES ===== */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+

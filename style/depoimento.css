@@ -1,0 +1,65 @@
+/* ===== BENEFÍCIOS ===== */
+.beneficios-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.beneficios-container {
+  display: flex;
+  width: 100%;
+  height: 70vh; /* ajusta a altura aqui */
+}
+
+.beneficios-imagem {
+  flex: 1;
+}
+
+.beneficios-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beneficios-cor-solida {
+  flex: 1;
+  background-color: #4b2c20; /* marrom */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.beneficios-cor-solida h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.beneficios-cor-solida p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #25d366; /* verde WhatsApp, combina bem com o marrom */
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid #1da851;
+}
+
+.btn-whatsapp:hover {
+  background-color: transparent;
+  color: #25d366;
+  border: 2px solid #25d366;
+}

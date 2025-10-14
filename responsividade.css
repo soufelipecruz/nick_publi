@@ -1,0 +1,174 @@
+/* ===== AJUSTE GLOBAL DE RESPONSIVIDADE ===== */
+:root {
+  --padding-desktop: 7rem;
+  --padding-tablet: 3rem;
+  --padding-mobile: 1.5rem;
+}
+
+/* Garante fluidez geral */
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== Ajustes do Banner ===== */
+@media (max-width: 1024px) {
+  .banner-overlay {
+    padding: 0 var(--padding-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    height: auto;
+    min-height: 80vh;
+  }
+
+  .banner-overlay {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--padding-mobile);
+  }
+
+  .banner-content {
+    align-items: center;
+  }
+
+  .banner-btn {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+
+/* ===== SOBRE ===== */
+@media (max-width: 1024px) {
+  .sobre-cor-solida {
+    padding: 4rem var(--padding-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .imagem-section {
+    flex-direction: column;
+  }
+
+  .sobre-cor-solida,
+  .sobre-imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobre-cor-solida {
+    text-align: center;
+    align-items: center;
+    padding: 3rem var(--padding-mobile);
+  }
+
+  .texto-sobre h2{
+    text-align: center;
+  }
+
+  .texto-sobre {
+    max-width: 95%;
+    align-self: center;
+  }
+
+  .sobre-logo {
+    position: relative;
+    margin-top: 2rem;
+    visibility: hidden;
+    right: 0;
+  }
+
+}
+
+/* ===== BENEFÍCIOS ===== */
+@media (max-width: 1024px) {
+  .beneficios-cor-solida {
+    padding: 3rem var(--padding-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .beneficios-container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .beneficios-cor-solida {
+    padding: 3rem var(--padding-mobile);
+    text-align: center;
+    align-items: center;
+  }
+
+  .beneficios-cor-solida p {
+    max-width: 90%;
+  }
+
+  .beneficios-imagem {
+    height: 300px;
+  }
+}
+
+/* ===== GALERIA ===== */
+@media (max-width: 900px) {
+  .galeria-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .galeria-item {
+    height: 45vh;
+  }
+
+  .galeria-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* ===== ENCERRAMENTO ===== */
+@media (max-width: 1024px) {
+  .encerramento-section {
+    padding: 6rem var(--padding-tablet);
+    height: auto;
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .encerramento-section {
+    padding: 4rem var(--padding-mobile);
+    text-align: center;
+  }
+
+  .encerramento-section h2,
+  .encerramento-section p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .btn-whatsapp {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .logo-encerramento {
+    position: relative;
+    display: block;
+    margin: 3rem auto 0;
+    right: 0;
+  }
+}
+
+/* ===== Ajuste fino do hover na galeria ===== */
+.galeria-item:hover {
+  transform: scale(1.05);
+  z-index: 5;
+  position: relative;
+}
+
+/* Garante que o overflow da galeria não corte o destaque */
+.galeria-section {
+  overflow: visible;
+}

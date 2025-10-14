@@ -1,0 +1,90 @@
+/* ===== BENEFÍCIOS ===== */
+.beneficios-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.beneficios-container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+ 
+.beneficios-imagem {
+  flex: 1;
+  overflow: hidden;
+}
+
+.beneficios-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 2s ease; /* hover mais suave */
+}
+
+.beneficios-imagem:hover img {
+  transform: scale(1.03);
+}
+
+/* ===== COR SÓLIDA (TEXTO À DIREITA) ===== */
+.beneficios-cor-solida {
+  flex: 1;
+  background-color: #4b2c20;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* conteúdo alinhado à esquerda */
+  text-align: left;
+  padding: 80px 100px;
+}
+
+/* ===== TÍTULO E TEXTO IGUAL “SOBRE” ===== */
+.beneficios-cor-solida h2 {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #fff9f2;
+}
+
+.beneficios-cor-solida p {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #fff3e0;
+  margin-bottom: 18px;
+  max-width: 600px;
+}
+
+/* ===== BOTÃO (versão menor e refinada) ===== */
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #1da851;
+  box-shadow: 0 0 12px rgba(37, 211, 102, 0.2);
+  text-align: center;
+}
+
+.btn-whatsapp:hover {
+  background-color: transparent;
+  color: #25d366;
+  border: 2px solid #25d366;
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(37, 211, 102, 0.3);
+}
+
+
+

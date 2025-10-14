@@ -1,0 +1,79 @@
+.encerramento-section {
+  position: relative;
+  background: url("/img/nick_enc3.jpg") center/cover no-repeat;
+  color: #FFF9F2;
+  text-align: left; /* alinhamento à esquerda */
+  padding: 120px 7rem;
+  height: 70vh;
+  font-family: "Glacial Indifference", sans-serif;
+  overflow: hidden;
+}
+
+/* Degradê de baixo pra cima (amarelo suave) */
+.encerramento-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #FAEAB1e0 40%, #fff9f200 90%);
+  z-index: 1;
+}
+
+.encerramento-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0;
+}
+
+.encerramento-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.encerramento-section p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+
+.encerramento-section .destaque {
+  font-weight: 600;
+  color: #FFF9F2;
+  font-style: italic;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #69abc3;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  /* border: 2px solid #493222; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp:hover {
+  background-color: #4c3222;
+  color: #fff9f2;
+  transform: scale(1.05);
+}
+
+/* Logo no canto inferior direito */
+.logo-encerramento {
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+  width: 120px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
