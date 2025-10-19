@@ -45,7 +45,7 @@
 
 .sobre-cor-solida h2 {
   font-family: 'Glacial Indifference', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
   color: #493222;
   text-align: start;
@@ -53,8 +53,8 @@
 
 .sobre-cor-solida p {
   font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 /* ===== LOGO ===== */

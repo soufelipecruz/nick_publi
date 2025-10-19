@@ -11,13 +11,7 @@ section {
   overflow: hidden;
 }
 
-/* ===== Ajustes do Banner ===== */
-@media (max-width: 1024px) {
-  .banner-overlay {
-    padding: 0 var(--padding-tablet);
-  }
-}
-
+/* ===== BANNER ===== */
 @media (max-width: 768px) {
   .banner-section {
     height: auto;
@@ -26,36 +20,49 @@ section {
 
   .banner-overlay {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
     padding: var(--padding-mobile);
   }
 
   .banner-content {
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
   }
 
   .banner-btn {
     width: 80%;
     max-width: 280px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 /* ===== SOBRE ===== */
-@media (max-width: 1024px) {
-  .sobre-cor-solida {
-    padding: 4rem var(--padding-tablet);
-  }
-}
-
 @media (max-width: 768px) {
   .imagem-section {
     flex-direction: column;
   }
 
-  .sobre-cor-solida,
+  .sobre-cor-solida{
+    width: 100%;
+    height: auto;
+  }
   .sobre-imagem {
     width: 100%;
     height: auto;
+    display: none;
   }
 
   .sobre-cor-solida {
@@ -64,31 +71,30 @@ section {
     padding: 3rem var(--padding-mobile);
   }
 
-  .texto-sobre h2{
-    text-align: center;
-  }
-
   .texto-sobre {
     max-width: 95%;
-    align-self: center;
+    align-self: self-start;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
+  /* Evita corte e mantém margens seguras */
+  .texto-sobre p {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* Remove logo no mobile */
   .sobre-logo {
-    position: relative;
-    margin-top: 2rem;
-    visibility: hidden;
-    right: 0;
+    display: none !important;
   }
-
 }
 
 /* ===== BENEFÍCIOS ===== */
-@media (max-width: 1024px) {
-  .beneficios-cor-solida {
-    padding: 3rem var(--padding-tablet);
-  }
-}
-
 @media (max-width: 768px) {
   .beneficios-container {
     flex-direction: column-reverse;
@@ -106,46 +112,72 @@ section {
   }
 
   .beneficios-imagem {
-    height: 300px;
+    display: none;
   }
 }
 
 /* ===== GALERIA ===== */
+.galeria-section {
+  overflow: visible;
+}
+
 @media (max-width: 900px) {
   .galeria-section {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* DUAS COLUNAS */
+    gap: 1rem;
     height: auto;
+    padding: var(--padding-mobile);
   }
 
   .galeria-item {
-    height: 45vh;
+    height: 35vh;
+    background-size: cover;
+    background-position: center top !important;
+    border-radius: 12px;
+    transition: transform 0.4s ease, filter 0.4s ease;
   }
 
   .galeria-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  /* Animação sutil e elegante para mobile */
+  .galeria-item {
+    animation: galeriaFloat 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes galeriaFloat {
+    0% {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+    100% {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
   }
 }
 
 /* ===== ENCERRAMENTO ===== */
-@media (max-width: 1024px) {
-  .encerramento-section {
-    padding: 6rem var(--padding-tablet);
-    height: auto;
-    min-height: 70vh;
-  }
-}
-
 @media (max-width: 768px) {
   .encerramento-section {
-    padding: 4rem var(--padding-mobile);
+    padding: 2rem var(--padding-mobile);
     text-align: center;
   }
 
-  .encerramento-section h2,
-  .encerramento-section p {
-    text-align: center;
+  .encerramento-section h2 {
+    text-align: start;
     max-width: 100%;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .encerramento-section p {
+    text-align: start;
+    max-width: 100%;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   .btn-whatsapp {
@@ -156,19 +188,14 @@ section {
   .logo-encerramento {
     position: relative;
     display: block;
-    margin: 3rem auto 0;
+    margin: 1rem auto 0;
     right: 0;
   }
 }
 
-/* ===== Ajuste fino do hover na galeria ===== */
+/* ===== Hover da galeria ===== */
 .galeria-item:hover {
   transform: scale(1.05);
   z-index: 5;
   position: relative;
-}
-
-/* Garante que o overflow da galeria não corte o destaque */
-.galeria-section {
-  overflow: visible;
 }

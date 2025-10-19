@@ -77,7 +77,7 @@ body {
 /* ===== Texto ===== */
 .banner-content p {
   margin-top: 1rem;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1.5rem, 2vw, 1.25rem);
   color: #FFF9F2;
   line-height: 1.6;
 }
