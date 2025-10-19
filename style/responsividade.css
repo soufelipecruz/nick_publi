@@ -128,6 +128,7 @@ section {
     gap: 1rem;
     height: auto;
     padding: var(--padding-mobile);
+    background-color: #FFF9F2;
   }
 
   .galeria-item {
@@ -183,6 +184,7 @@ section {
   .btn-whatsapp {
     width: 80%;
     max-width: 280px;
+    font-size: 1rem;
   }
 
   .logo-encerramento {

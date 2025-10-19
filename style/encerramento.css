@@ -1,6 +1,6 @@
 .encerramento-section {
   position: relative;
-  background: url("/img/nick_enc3w.webp") center/cover no-repeat;
+  background: url("/img/enc_SVG.svg") center/cover no-repeat;
   color: #FFF9F2;
   text-align: left; /* alinhamento à esquerda */
   padding: 120px 7rem;
@@ -49,7 +49,7 @@
 
 .btn-whatsapp {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 10px;
   background-color: #69abc3;
   color: #fff;
   padding: 14px 28px;
@@ -74,6 +74,6 @@
   right: 40px;
   width: 120px;
   z-index: 2;
-  opacity: 0.9;
+  opacity: 1;
 }
 

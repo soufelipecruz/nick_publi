@@ -31,10 +31,10 @@
 }
 
 /* Imagens */
-.cor1 { background-image: url("/img/nick_amarelow.webp"); }
-.cor2 { background-image: url("/img/nick_branco_focow.webp"); }
-.cor3 { background-image: url("/img/nick_cellw.webp"); }
-.cor4 { background-image: url("/img/nick_focow.webp"); }
+.cor1 { background-image: url("/img/amarelo_SVG.svg"); }
+.cor2 { background-image: url("/img/branco_foco_SVG.svg"); }
+.cor3 { background-image: url("/img/cell_SVG.svg"); }
+.cor4 { background-image: url("/img/foco_SVG.svg"); }
 
 /* ===== Degradês coloridos (de baixo pra cima) ===== */
 .cor1 .overlay {
